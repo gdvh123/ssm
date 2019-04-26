@@ -1,9 +1,6 @@
 
 # 手把手教你入门SSM框架开发
 
-关于SSM框架环境搭建，请点击这里前往我的博客：[SSM框架整合之环境搭建](http://tycoding.cn/2018/06/04/ssm/)
-由于本项目采用了maven，关于IDEA搭建maven项目过程请点击这里前往我的博客：[maven起步](http://tycoding.cn/2018/06/01/maven/)
-
 **如果觉得不错就点击右上角star鼓励一下作者吧！**
 
 # 关于项目
@@ -49,8 +46,7 @@
             └── lib  -- 前端静态资源
 ```
 
-## 整合思路
-继上一篇博文：[Spring MVC起步](http://tycoding.cn/2018/05/29/Spring-5/)其实我们已经了解了如何整合Spring和Spring MVC框架。那么，接下来我们就需要了解如何在此基础上整合Mybatis框架。
+
 首先须知Mybatis框架是一个持久层框架，而Spring MVC是WEB层框架，Spring框架则充当着业务层的角色。那么将三者联系起来正好组成了`web--service--dao`的三层架构体系。那么整合思路就如下所示了：
     
 1. 整合dao(即mapper)，实现Mybatis和Spring的整合
